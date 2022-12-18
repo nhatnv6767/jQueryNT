@@ -9,10 +9,12 @@ $(document).ready(function () {
                 console.log(result.navPills)
                 var contentNavPills = ""
                 result.navPills.forEach(function (item, index) {
+                    var activeClass = item.tabName === "tabTopClothes" ? "active" : ""
+
                     contentNavPills += `
                         <li class="nav-item">
                             <a
-                                class="nav-link  btn-default"
+                                class="nav-link ${activeClass} btn-default"
                                 data-toggle="pill"
                                 href="#${item.tabName}"
                             >
