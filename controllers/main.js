@@ -156,8 +156,17 @@ $(document).ready(function () {
             listChosen.addAddItem(choseItem)
         }
 
-
-        console.log(listChosen.arr)
+        renderContain(listChosen.arr)
+        // console.log(listChosen.arr)
 
     })
+
+    function renderContain(chosenItems) {
+        if (chosenItems && chosenItems.length > 0) {
+            console.log(chosenItems)
+            chosenItems.forEach(function (item) {
+
+            })
+        }
+    }
 })
