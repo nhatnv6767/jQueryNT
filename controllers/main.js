@@ -123,6 +123,14 @@ $(document).ready(function () {
     // vì class changeStyle được tạo sau khi render xong giao diện nên không thể làm
     // như những bước ở trên để thử chức năng click của nút thử đồ được
     $("body").delegate(".changeStyle", "click", function () {
-        console.log(123)
+        // xác định đang bấm vào nút đó, lấy thuộc tính của nút đang bấm
+        var id = $(this).data("id")
+        var type = $(this).data("type")
+        var name = $(this).data("name")
+        var desc = $(this).data("desc")
+        var imgsrc_jpg = $(this).data("imgsrcjpg")
+        var imgsrc_png = $(this).data("imgsrcpng")
+
+
     })
 })
