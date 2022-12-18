@@ -17,7 +17,7 @@ $(document).ready(function () {
                     contentTabPanes += `
                         <div class="tab-pane container ${fadeClass} ${activeClass}" id="${item.tabName}">
                             <div class="row">
-                                ${item.showName}
+                                ${renderTabPane(item.tabName, result.tabPanes)}
                             </div>
                         </div>
                     `
