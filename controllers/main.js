@@ -15,7 +15,7 @@ $(document).ready(function () {
 
                     contentNavPills += getElmTabPill(item, activeClass)
                     contentTabPanes += `
-                        <div class="tab-pane container ${fadeClass}" id="tabTopClothes">
+                        <div class="tab-pane container ${fadeClass} ${activeClass}" id="${item.tabName}">
                             <div class="row">
                                 ${item.showName}
                             </div>
