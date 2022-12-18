@@ -53,4 +53,14 @@ $(document).ready(function () {
                 break;
         }
     }
+
+    function getTypeArr(tabType, data) {
+        var tempArr = [];
+        data.forEach(function (item) {
+            if (item.type === tabType) {
+                tempArr.push(item)
+            }
+        })
+        return tempArr;
+    }
 })
