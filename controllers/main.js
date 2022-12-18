@@ -102,11 +102,15 @@ $(document).ready(function () {
                         src="${item.imgSrc_jpg}"
                         />
                         <h4><b>${item.name}</b></h4>
-                        <button>Thử đồ</button>
+                        <button class="changeStyle">Thử đồ</button>
                     </div>
                 </div>
             `
         })
         return elmItem;
     }
+
+    $(".changeStyle").click(function () {
+        console.log(123)
+    })
 })
