@@ -121,6 +121,19 @@ $(document).ready(function () {
         return elmItem;
     }
 
+    // xem thử loại món đồ đang thử đã có trong mảng hay chưa
+    function findIndex(type) {
+        var index = -1;
+        if (listChosen.arr && listChosen.arr.length > 0) {
+            listChosen.arr.forEach(function (item, i) {
+                if (item.type === type) {
+                    index = i;
+                }
+            })
+        }
+        return index;
+    }
+
     // vì class changeStyle được tạo sau khi render xong giao diện nên không thể làm
     // như những bước ở trên để thử chức năng click của nút thử đồ được
     $("body").delegate(".changeStyle", "click", function () {
