@@ -6,7 +6,7 @@ $(document).ready(function () {
     function renderHTML() {
         callData.getListData()
             .done(function (result) {
-                console.log(result.navPills)
+                // console.log(result.navPills)
                 var contentNavPills = ""
                 var contentTabPanes = ""
                 result.navPills.forEach(function (item, index) {
@@ -48,6 +48,8 @@ $(document).ready(function () {
         var tempArr = null;
         switch (tabName) {
             case "tabTopClothes":
+                tempArr = getTypeArr("topclothes", arrTabPane)
+                console.log(tempArr)
                 break;
             default:
                 break;
