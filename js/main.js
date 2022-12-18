@@ -5,4 +5,7 @@ $(document).ready(function () {
 
     var contentClass = $(".myClass").html()
     console.log(contentClass)
+
+    var contentInput = $("#txtInput").val()
+    console.log(contentInput)
 })
