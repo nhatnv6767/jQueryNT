@@ -2,4 +2,7 @@
 $(document).ready(function () {
     var content = $("#myId").html();
     console.log(content)
+
+    var contentClass = $(".myClass").html()
+    console.log(contentClass)
 })
