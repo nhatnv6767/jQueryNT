@@ -43,4 +43,14 @@ $(document).ready(function () {
                 </li>
             `
     }
+
+    function renderTabPane(tabName, arrTabPane) {
+        var tempArr = null;
+        switch (tabName) {
+            case "tabTopClothes":
+                break;
+            default:
+                break;
+        }
+    }
 })
