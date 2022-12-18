@@ -8,4 +8,8 @@ $(document).ready(function () {
 
     var contentInput = $("#txtInput").val()
     console.log(contentInput)
+
+    $("#btnClick").click(function () {
+        console.log(123)
+    })
 })
