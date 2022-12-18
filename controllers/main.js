@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var callData = new CallData();
+    var listChosen = new ListChosen();
 
     renderHTML()
 
@@ -132,7 +133,9 @@ $(document).ready(function () {
         var imgsrc_png = $(this).data("imgsrcpng")
 
         var choseItem = new ChoseItem(id, type, name, desc, imgsrc_jpg, imgsrc_png)
-        console.log(choseItem)
+
+        listChosen.addAddItem(choseItem)
+        console.log(listChosen.arr)
 
     })
 })
