@@ -1,6 +1,8 @@
 $(document).ready(function () {
     var callData = new CallData();
 
+    renderHTML()
+
     function renderHTML() {
         callData.getListData()
             .done(function (result) {
