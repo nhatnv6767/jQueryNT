@@ -16,4 +16,7 @@ $(document).ready(function () {
     $("#btnShow").click(function () {
         $("#divHi").css({display: "block"})
     })
+    $("#btnHide").click(function () {
+        $("#divHi").css({display: "none"})
+    })
 })
