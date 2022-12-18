@@ -52,6 +52,30 @@ $(document).ready(function () {
                 tempArr = getTypeArr("topclothes", arrTabPane)
                 elmItem = getElmItem(tempArr)
                 break;
+            case "tabBotClothes":
+                tempArr = getTypeArr("botclothes", arrTabPane)
+                elmItem = getElmItem(tempArr)
+                break;
+            case "tabShoes":
+                tempArr = getTypeArr("shoes", arrTabPane)
+                elmItem = getElmItem(tempArr)
+                break;
+            case "tabHandBags":
+                tempArr = getTypeArr("handbags", arrTabPane)
+                elmItem = getElmItem(tempArr)
+                break;
+            case "tabNecklaces":
+                tempArr = getTypeArr("necklaces", arrTabPane)
+                elmItem = getElmItem(tempArr)
+                break;
+            case "tabHairStyle":
+                tempArr = getTypeArr("hairstyle", arrTabPane)
+                elmItem = getElmItem(tempArr)
+                break;
+            case "tabBackground":
+                tempArr = getTypeArr("background", arrTabPane)
+                elmItem = getElmItem(tempArr)
+                break;
             default:
                 break;
         }
