@@ -110,7 +110,9 @@ $(document).ready(function () {
         return elmItem;
     }
 
-    $(".changeStyle").click(function () {
+    // vì class changeStyle được tạo sau khi render xong giao diện nên không thể làm
+    // như những bước ở trên để thử chức năng click của nút thử đồ được
+    $("body").delegate(".changeStyle", "click", function () {
         console.log(123)
     })
 })
