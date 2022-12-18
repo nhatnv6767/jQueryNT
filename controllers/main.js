@@ -21,7 +21,7 @@ $(document).ready(function () {
                         </li>
                     `
                 })
-
+                $(".nav-pills").html(contentNavPills)
             })
             .fail(function (err) {
                 console.log(err)
