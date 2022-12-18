@@ -165,7 +165,27 @@ $(document).ready(function () {
         if (chosenItems && chosenItems.length > 0) {
             console.log(chosenItems)
             chosenItems.forEach(function (item) {
+                if (item.type === "topclothes") {
 
+                }
+                if (item.type === "botclothes") {
+
+                }
+                if (item.type === "shoes") {
+
+                }
+                if (item.type === "handbags") {
+
+                }
+                if (item.type === "necklaces") {
+
+                }
+                if (item.type === "hairstyle") {
+
+                }
+                if (item.type === "background") {
+
+                }
             })
         }
     }
