@@ -65,4 +65,22 @@ $(document).ready(function () {
         })
         return tempArr;
     }
+
+    function getElmItem(tempArr) {
+        var elmItem = ""
+        tempArr.forEach(function (item) {
+            elmItem += `
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <img
+                        src="${item.imgSrc_jpg}"
+                        />
+                        <h4><b>${item.name}</b></h4>
+                        <button>Thử đồ</button>
+                    </div>
+                </div>
+            `
+        })
+        return elmItem;
+    }
 })
