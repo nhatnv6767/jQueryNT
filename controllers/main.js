@@ -131,6 +131,8 @@ $(document).ready(function () {
         var imgsrc_jpg = $(this).data("imgsrcjpg")
         var imgsrc_png = $(this).data("imgsrcpng")
 
+        var choseItem = new ChoseItem(id, type, name, desc, imgsrc_jpg, imgsrc_png)
+        console.log(choseItem)
 
     })
 })
