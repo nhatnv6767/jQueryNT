@@ -11,10 +11,11 @@ $(document).ready(function () {
                 var contentTabPanes = ""
                 result.navPills.forEach(function (item, index) {
                     var activeClass = item.tabName === "tabTopClothes" ? "active" : ""
+                    var fadeClass = item.tabName !== "tabTopClothes" ? "fade" : ""
 
                     contentNavPills += getElmTabPill(item, activeClass)
                     contentTabPanes += `
-                        <div class="tab-pane container active" id="tabTopClothes">
+                        <div class="tab-pane container ${fadeClass}" id="tabTopClothes">
                             <div class="row">
                                 ${item.showName}
                             </div>
@@ -22,7 +23,7 @@ $(document).ready(function () {
                     `
                 })
                 $(".nav-pills").html(contentNavPills)
-                // $(".tab-content").html(contentTabPanes)
+                $(".tab-content").html(contentTabPanes)
             })
             .fail(function (err) {
                 console.log(err)
