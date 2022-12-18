@@ -10,6 +10,6 @@ $(document).ready(function () {
     console.log(contentInput)
 
     $("#btnClick").click(function () {
-        console.log(123)
+        console.log($("#txtInput").val())
     })
 })
