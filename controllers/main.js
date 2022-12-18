@@ -102,7 +102,17 @@ $(document).ready(function () {
                         src="${item.imgSrc_jpg}"
                         />
                         <h4><b>${item.name}</b></h4>
-                        <button class="changeStyle">Thử đồ</button>
+<!--                        gan nhung du lieu vao nut-->
+                        <button 
+                        data-id="${item.id}" 
+                        data-type="${item.type}"
+                        data-name="${item.name}"
+                        data-desc="${item.desc}"
+                        data-imgsrcjpg="${item.imgSrc_jpg}"
+                        data-imgsrcpng="${item.imgSrc_png}"
+                        class="changeStyle"
+                        >Thử đồ
+                        </button>
                     </div>
                 </div>
             `
