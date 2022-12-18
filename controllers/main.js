@@ -11,22 +11,26 @@ $(document).ready(function () {
                 result.navPills.forEach(function (item, index) {
                     var activeClass = item.tabName === "tabTopClothes" ? "active" : ""
 
-                    contentNavPills += `
-                        <li class="nav-item">
-                            <a
-                                class="nav-link ${activeClass} btn-default"
-                                data-toggle="pill"
-                                href="#${item.tabName}"
-                            >
-                            ${item.showName}
-                            </a>
-                        </li>
-                    `
+                    contentNavPills += getElmTabPill()
                 })
                 $(".nav-pills").html(contentNavPills)
             })
             .fail(function (err) {
                 console.log(err)
             });
+    }
+
+    function getElmTabPill(item, activeClass) {
+        return `
+                <li class="nav-item">
+                    <a
+                        class="nav-link ${activeClass} btn-default"
+                        data-toggle="pill"
+                        href="#${item.tabName}"
+                    >
+                        ${item.showName}
+                    </a>
+                </li>
+            `
     }
 })
