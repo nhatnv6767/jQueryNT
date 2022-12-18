@@ -12,4 +12,8 @@ $(document).ready(function () {
     $("#btnClick").click(function () {
         console.log($("#txtInput").val())
     })
+
+    $("#btnShow").click(function () {
+        $("#divHi").css({display: "block"})
+    })
 })
