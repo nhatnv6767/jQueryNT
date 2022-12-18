@@ -46,14 +46,16 @@ $(document).ready(function () {
 
     function renderTabPane(tabName, arrTabPane) {
         var tempArr = null;
+        var elmItem = null;
         switch (tabName) {
             case "tabTopClothes":
                 tempArr = getTypeArr("topclothes", arrTabPane)
-                console.log(tempArr)
+                elmItem = getElmItem(tempArr)
                 break;
             default:
                 break;
         }
+        return elmItem;
     }
 
     function getTypeArr(tabType, data) {
