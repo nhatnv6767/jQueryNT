@@ -11,16 +11,17 @@ $(document).ready(function () {
                 result.navPills.forEach(function (item, index) {
                     contentNavPills += `
                         <li class="nav-item">
-                        <a
-                            class="nav-link active  btn-default"
-                            data-toggle="pill"
-                            href="#tabTopClothes"
-                        >
-                        Áo
-                        </a>
-                </li>
+                            <a
+                                class="nav-link active  btn-default"
+                                data-toggle="pill"
+                                href="#${item.tabName}"
+                            >
+                            ${item.showName}
+                            </a>
+                        </li>
                     `
                 })
+
             })
             .fail(function (err) {
                 console.log(err)
