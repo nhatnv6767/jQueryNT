@@ -14,9 +14,11 @@ $(document).ready(function () {
     })
 
     $("#btnShow").click(function () {
-        $("#divHi").css({display: "block"})
+        // $("#divHi").css({display: "block"})
+        $("#divHi").show();
     })
     $("#btnHide").click(function () {
-        $("#divHi").css({display: "none"})
+        // $("#divHi").css({display: "none"})
+        $("#divHi").hide()
     })
 })
