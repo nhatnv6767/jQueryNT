@@ -6,7 +6,10 @@ $(document).ready(function () {
     function renderHTML() {
         callData.getListData()
             .done(function (result) {
-                console.log(result)
+                console.log(result.navPills)
+                result.navPills.forEach(function (item, index) {
+                    
+                })
             })
             .fail(function (err) {
                 console.log(err)
