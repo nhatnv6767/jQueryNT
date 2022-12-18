@@ -12,7 +12,7 @@ $(document).ready(function () {
                     contentNavPills += `
                         <li class="nav-item">
                             <a
-                                class="nav-link active  btn-default"
+                                class="nav-link  btn-default"
                                 data-toggle="pill"
                                 href="#${item.tabName}"
                             >
