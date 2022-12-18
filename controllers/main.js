@@ -147,7 +147,16 @@ $(document).ready(function () {
 
         var choseItem = new ChoseItem(id, type, name, desc, imgsrc_jpg, imgsrc_png)
 
-        listChosen.addAddItem(choseItem)
+        var index = findIndex(choseItem.type)
+        if (index !== -1) {
+            // UPDATE
+            listChosen.arr[index] = choseItem
+        } else {
+            //ADD
+            listChosen.addAddItem(choseItem)
+        }
+
+
         console.log(listChosen.arr)
 
     })
