@@ -11,7 +11,7 @@ $(document).ready(function () {
                 result.navPills.forEach(function (item, index) {
                     var activeClass = item.tabName === "tabTopClothes" ? "active" : ""
 
-                    contentNavPills += getElmTabPill()
+                    contentNavPills += getElmTabPill(item, activeClass)
                 })
                 $(".nav-pills").html(contentNavPills)
             })
